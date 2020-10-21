@@ -22,12 +22,10 @@ O objetio é encontrar o número máximo de ladrões que podem ser capturados.
 
 Uma abordagem de força bruta seria verificar todos os conjuntos de combinações de polícia e ladrão e retornar o tamanho máximo definido entre eles. Sua complexidade de tempo é exponencial.
 
-Uma solução eficiente é usar um **Greed Algorithm** (Algoritmo ambicioso). Mas selecionar uma propriedade ambiciosa pode ser complicado. Podemos tentar usar: *“Para cada policial da esquerda pegue o ladrão mais próximo possível”*.
-Isso funciona para o exemplo três fornecido acima, mas falha para o exemplo dois, pois produz 2, que está incorreto.<br>
+Uma solução eficiente é usar um **Greed Algorithm** (Algoritmo ambicioso). Mas selecionar uma propriedade ambiciosa pode ser complicado. Podemos tentar usar: *“Para cada policial da esquerda pegue o ladrão mais próximo possível”*.<br>
 
 Também podemos tentar: 
-*“Para cada policial da esquerda pegar o ladrão mais distante possível”*.
-Isso funciona para o exemplo dois fornecido acima, mas falha para o exemplo três, pois produz 2, que está incorreto.<br>
+*“Para cada policial da esquerda pegar o ladrão mais distante possível”*.<br>
 
 Um argumento simétrico pode ser aplicado para mostrar que a travessia para estes do lado direito do `array` também falha.
 
