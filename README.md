@@ -40,6 +40,9 @@ Podemos observar que pensar independentemente do policial e se concentrando apen
 3. Repetir as duas etapas acima até que os próximos `p` e `t` sejam encontrados.
 4. Retornar o número de distribuições feitas.
 
+A complexidade desta abordagem é **O(n)** onde **n** é o tamanho do `array`.
+
+
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
