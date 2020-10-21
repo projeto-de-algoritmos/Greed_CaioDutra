@@ -18,6 +18,25 @@ Adicione 3 ou mais screenshots do projeto em funcionamento.
 ## Instalação 
 **Linguagem**: Python<br>
 
+### Para `MacOS`:
+1. `venv` no python 3:
+    ```
+        python3 -m venv <envname>
+    ```
+2. Ativando `virtualenv`:
+    ```
+        source <envname>/bion/activate
+    ```
+3. Instalando `requirements.txt`:
+    ```
+        pip3 install -r requirements.txt
+    ```
+4. Ativando `venv` no Jupyter Notebook:
+    ```
+        python3 -m ipykernel install --name=<envname>
+    ```
+
+
 ## Uso 
 Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
 
