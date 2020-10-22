@@ -48,6 +48,20 @@ Adicione 3 ou mais screenshots do projeto em funcionamento.
 ## Instalação 
 **Linguagem**: Python<br>
 
+### Requisitos para executar o projeto
+1. [Docker](https://docs.docker.com/get-docker/)
+2. [Docker-Compose](https://docs.docker.com/compose/install/)
+
+### Executando o projeto
+1. Executar o docker-compose (pode necessitar de permissões de administrador)
+    ```
+        docker-compose up --build
+    ```
+2. Acesse, por meio de um navegador o seguinte link
+    ```
+        http://localhost:8888/
+    ```
+
 ### Para `MacOS`:
 1. `venv` no python 3:
     ```
