@@ -65,6 +65,7 @@ A complexidade desta abordagem é **O(n)** onde **n** é o tamanho do `array`.
     ```
 
 ## Uso 
+[Vídeo de explicação](https://github.com/projeto-de-algoritmos/Greed_PoliciaLadrao/blob/master/explicacao.mp4)
 1. Após execução do projeto, entre no arquivo `App.ipynb` e clique no botão `Voilà`.
    ![voila](img/voila.jpg)
 2. Adicione Policiais e Ladrões ao array através do botão indicado.
