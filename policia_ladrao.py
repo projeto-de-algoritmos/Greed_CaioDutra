@@ -1,11 +1,12 @@
-def policeThief(arr, n, k): 
+def policeThief(arr, k): 
     i = 0
     l = 0
     r = 0
     res = 0
     thi = [] 
     pol = [] 
-  
+    n = len(arr)
+
     while i < n: 
         if arr[i] == 'P': 
             pol.append(i) 
