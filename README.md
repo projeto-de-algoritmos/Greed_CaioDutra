@@ -12,27 +12,25 @@
 ## Sobre 
 ### Problema Polícia e Ladrão:
 
-Dado um `array` de tamanho **n** que tem as seguintes especificações:
+Dado um `array` de tamanho **n** que segue as seguintes especificações:
 
 1. Cada elemento do `array` contém um **policial** ou um **ladrão**.
 2. Cada policial pode pegar apenas um ladrão.
-3. Um policial não pode pegar um ladrão que esteja a mais de **K** unidades de distância do policial.
+3. Um policial só pode pegar um ladrão que esteja até **K** unidades de distância.
 
-O objetio é encontrar o número máximo de ladrões que podem ser capturados.
+O objetivo é encontrar o número máximo de ladrões que possam ser capturados.
 
-Uma abordagem de força bruta seria verificar todos os conjuntos de combinações de polícia e ladrão e retornar o tamanho máximo definido entre eles. Sua complexidade de tempo é exponencial.
+Uma abordagem de **força bruta** seria verificar todos os conjuntos de combinações de polícia e ladrão e retornar o tamanho máximo definido entre eles. Porém sua complexidade seria exponencial.
 
-Uma solução eficiente é usar um **Greed Algorithm** (Algoritmo ambicioso). Mas selecionar uma propriedade ambiciosa pode ser complicado. Podemos tentar usar: *“Para cada policial da esquerda pegue o ladrão mais próximo possível”*.<br>
+Uma solução eficiente é usar um **Greed Algorithm** (Algoritmo ambicioso).<br>
+Podemos tentar: *“Para cada policial da esquerda pegue o ladrão mais próximo possível”*.<br>
 
-Também podemos tentar: 
+Uma outra abordagem seria: 
 *“Para cada policial da esquerda pegar o ladrão mais distante possível”*.<br>
 
-Um argumento simétrico pode ser aplicado para mostrar que a travessia para estes do lado direito do `array` também falha.
 
-
-Podemos observar que pensar independentemente do policial e se concentrando apenas nas obras de loteamento:
-
-1. Oter o menor índice de policial `p` e ladrão `t`. Fazer uma distribuição
+Mas pensando independentemente do policial, concentrando apenas nas disposição dos elementos no `array`:
+1. Obter o menor índice de policial `p` e ladrão `t`. Fazer uma distribuição
 `if | p-t | <= k`  incrementando para o próximo `p` e `t` encontrado.
 2. Caso contrário, aumentar `min(p, t)` para o próximo `p` ou `t` encontrado.
 3. Repetir as duas etapas acima até que os próximos `p` e `t` sejam encontrados.
@@ -41,9 +39,13 @@ Podemos observar que pensar independentemente do policial e se concentrando apen
 A complexidade desta abordagem é **O(n)** onde **n** é o tamanho do `array`.
 
 
-
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+### Botões para adicionar mais policiais/ladrões
+![PT](img/BotaoPT.png)
+### Área para definir o valor de K
+![K](img/BotaoK.png)
+### Aplicação completa
+![Complete](img/Projeto.png)
 
 ## Instalação 
 **Linguagem**: Python<br>
@@ -63,10 +65,12 @@ Adicione 3 ou mais screenshots do projeto em funcionamento.
     ```
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
-
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+1. Após execução do projeto, entre no arquivo `App.ipynb` e clique no botão `Voilà`.
+   ![voila](img/voila.jpg)
+2. Adicione Policiais e Ladrões ao array através do botão indicado.
+3. Selecione o valor de `K`.
+4. Clique no botão `Run` para execução do algoritmo.
+5. Caso queira executar novamente o projeto, o botão `Clear the Array` resetará o Array construído e limpará os outputs.
 
 
 
